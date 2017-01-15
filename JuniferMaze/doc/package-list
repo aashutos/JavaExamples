@@ -1,0 +1,7 @@
+com.ntak.examples.JuniferMaze.application
+com.ntak.examples.JuniferMaze.enums
+com.ntak.examples.JuniferMaze.parsers
+com.ntak.examples.JuniferMaze.parsers.impl
+com.ntak.examples.JuniferMaze.trees
+com.ntak.examples.JuniferMaze.trees.impl
+com.ntak.examples.JuniferMaze.utils
