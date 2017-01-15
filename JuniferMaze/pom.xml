@@ -58,7 +58,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.ntak.examples.JuniferMaze.application</mainClass>
+							<mainClass>com.ntak.examples.JuniferMaze.application.App</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
