@@ -1,0 +1,8 @@
+.project
+target/*
+.settings/*
+.apt_generated/*
+.factorypath
+.classpath
+src/main/java/com/interview/yoti/robot/dao/jooq/*
+h2/bin/db/*
