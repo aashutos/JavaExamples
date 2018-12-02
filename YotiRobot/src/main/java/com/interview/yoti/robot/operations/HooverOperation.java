@@ -35,6 +35,7 @@ public class HooverOperation {
 			LOG.info("CURRENT STATE >>>>>" + currentState);
 			currentState = incrementHooverMovement(currentState, instruction);			
 		}
+		LOG.info("CURRENT STATE >>>>>" + currentState);
 		HooverResponsePayload response = new HooverResponsePayload(currentState.getHooverPosition(),currentState.getNoPatchesRemoved());
 		persistSimulation(request,response,timestamp);
 		
@@ -50,7 +51,7 @@ public class HooverOperation {
 	private static HooverState incrementHooverMovement(HooverState currentState, CardinalDirection instruction) {
 		Point2D newPosition = Point2DOperation.add(currentState.getHooverPosition(), instruction.getMovement());
 		
-		// Out of Bounds Validation CHeck
+		// Out of Bounds Validation Check
 		if (newPosition.getX() >= currentState.getDimensions().getX() || newPosition.getY() >= currentState.getDimensions().getY()
 			|| newPosition.getX() < 0 || newPosition.getY() < 0) {
 			return currentState;

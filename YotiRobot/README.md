@@ -54,3 +54,7 @@ The Spring Web Application can be built using Maven once again:
 #### Testing with SoapUI
 
 I have bundled in a brief set of test cases in the form of a Soap UI project in `/SoapUI/YOTI-ROBOT.xml` to run against the stood up Web Application. The Web Application does not require any authentication and is executed using HTTP POST commands.
+
+#### JUnit 4 Unit Tests
+
+The Unit Tests can all be run using the test suite: `com.interview.yoti.robot.TestSuite`.
